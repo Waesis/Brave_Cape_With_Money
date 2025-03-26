@@ -4,19 +4,7 @@ AggregateMonster();
   
 ///Replace with :
 #ifdef ENABLE_BRAVE_CAPE_WITH_MONEY
-#ifdef LEVEL_LIMIT_FOR_TAX_PER_USE
-								// Level req
-								static int incepator = 30;
-								static int mediu = 60;
-								static int avansat = 90;
-								static int maestru = 120;
-								//  Money Request
-								static int LowLevel = 5 * 1000; //  5000
-								static int MediumLevel = 10* 1000; // 10000
-								static int MaxLevel = 25 * 1000; // 25000
 
-
-#endif 
 								if(GetLevel() <= incepator )
 								{
 									// Under Level 30 don`t take taxe
