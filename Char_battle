@@ -1,0 +1,20 @@
+Find : struct FuncAggregateMonster
+
+Change : 
+
+			if (DISTANCE_APPROX(ch->GetX() - m_ch->GetX(), ch->GetY() - m_ch->GetY()) < 7000)
+				if (ch->CanBeginFight())
+					ch->BeginFight(m_ch);
+
+TO : 
+
+#ifdef BUFF_RAGE_BRAVE_CAPE
+			if (DISTANCE_APPROX(ch->GetX() - m_ch->GetX(), ch->GetY() - m_ch->GetY()) < 10000)
+				if (ch->CanBeginFight())
+					ch->BeginFight(m_ch);
+
+#else 
+			if (DISTANCE_APPROX(ch->GetX() - m_ch->GetX(), ch->GetY() - m_ch->GetY()) < 7000)
+				if (ch->CanBeginFight())
+					ch->BeginFight(m_ch);
+#endif
