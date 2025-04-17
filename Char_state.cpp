@@ -12,7 +12,7 @@ if (fDist >= 4000.f)
 
 Change :
 
-#ifdef
+#ifdef BUFF_RAGE_BRAVE_CAPE
 if (fDist >= 10000.f)
 {
   if (pkChrProtege)
